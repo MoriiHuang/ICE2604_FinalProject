@@ -1,9 +1,11 @@
+import sys
+sys.path.apprnd('../')
 from flask import Flask,render_template,request,redirect,url_for
 import pymysql
 import json
 import requests
 import json,random
-import seacher
+import searcher
 with open("2.json","rb") as f:
     b=json.load(f)
 app=Flask(__name__)

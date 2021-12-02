@@ -126,7 +126,7 @@ for i in content:
         "tags": i[3],
         "userId": i[4],
         "createDate": i[5],
-        "bookmard_count": int(i[6])
+        # "bookmard_count": int(i[6])
     }
     es.index(index="illusts_index", id=id, body=elem)
     id += 1
