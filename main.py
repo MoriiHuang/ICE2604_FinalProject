@@ -3,6 +3,7 @@ import pymysql
 import json
 import requests
 import json,random
+import seacher
 with open("2.json","rb") as f:
     b=json.load(f)
 app=Flask(__name__)
