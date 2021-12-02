@@ -26,7 +26,7 @@ class Searcher:
             print('No match result!')
             return None
 
-if __name__ == '__main__':
-    se = Searcher()
-    result = se.search(22646094, 'id')
-    print(json.dumps(result[0], indent=2, separators=(',', ';')))
+# if __name__ == '__main__':
+#     se = Searcher()
+#     result = se.search(22646094, 'id')
+#     print(json.dumps(result[0], indent=2, separators=(',', ';')))
