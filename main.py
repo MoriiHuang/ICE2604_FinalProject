@@ -303,4 +303,10 @@ def mainpage():
 def illust():
     the_id=request.args.get("id","13399152")
     return render_template("pic.html",url_foruse=func(d_url_foruse[the_id],the_id),title=d_title[the_id],tags=d_tags[the_id],ourl=d_url_foruse[the_id])
+def get_data():
+    data={
+    "categories":["魅惑の谷間","高跟鞋","Fate/GrandOrder" ,"R-18", "女の子","オリジナル"],
+    "data":[769  ,896,1184,2872,2990,4306]
+    }
+    return json.dumps(data)
 app.run(host='0.0.0.0',debug=True);
