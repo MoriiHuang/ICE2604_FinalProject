@@ -1,0 +1,51 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="This is our final project">
+    <meta name="author" content="">
+    <title>Final_Project</title>
+
+    <!-- Bootstrap core CSS -->
+<link href="static/example.css" rel="stylesheet">
+<link href="headers.css" rel="stylesheet">
+<link rel="stylesheet" href="static/sidebars.css">
+<!-- drag -->
+<script src="static/drag.js"></script>
+</head>
+<body>
+<div id="app">
+<header class="p-3 bg-dark text-white">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+          <img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Ftva3.sinaimg.cn%2Flarge%2F006yt1Omly1g9lr654eufj314a18ghdt.jpg&refer=http%3A%2F%2Ftva3.sinaimg.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1640417813&t=46452ea5d6c1fb234cb50db394caf3cc" class="bi me-2" width="60" height="48" role="img"></img>
+        </a>
+
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="home" class="nav-link px-2 text-white">Home</a></li>
+          <li><a href="static" class="nav-link px-2 text-white">static</a></li>
+          <li><a href="picture" class="nav-link px-2 text-white">Pictures</a></li>
+          <li><a href="tags" class="nav-link px-2 text-white">Tags</a></li>
+          <li><a href="search" class="nav-link px-2 text-white">Search</a></li>
+
+        </ul>
+      </div>
+    </div>
+  </header>
+  <embed  id="illust-map" width="100%" height="80%" src="static/out.svg" type="image/svg+xml" />  
+        <script>
+            // Don't use window.onLoad like this in production, because it can only listen to one function.
+            window.onload = function() {
+              svgPanZoom('#illust-map', {
+                zoomEnabled: true,
+                controlIconsEnabled: true
+              });
+            };
+        </script>
+</div>
+</body>
+<script src="static/vue.js"></script>
+<script type="text/javascript" src="static/main.js"></script>
+</html>
